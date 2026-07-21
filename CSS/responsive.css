@@ -1,21 +1,945 @@
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
+/* =========================================================
+   DRIP MOBILE DETAILING
+   Responsive Stylesheet
+   Save as: responsive.css
+========================================================= */
+
+
+/* =========================================================
+   LARGE DESKTOPS AND LAPTOPS
+========================================================= */
+
+@media (max-width: 1200px) {
+    :root {
+        --section-spacing: 105px;
+    }
+
+    .container {
+        width: min(calc(100% - 40px), 1100px);
+    }
+
+    .desktop-nav {
+        gap: 22px;
+    }
+
+    .hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(340px, 0.58fr);
+        gap: 55px;
+    }
+
+    .hero-card {
+        padding: 36px 30px;
+    }
+
+    .services-heading {
+        gap: 55px;
+    }
+
+    .service-card {
+        padding: 34px 28px;
+    }
+
+    .convenience-grid,
+    .service-area-grid,
+    .faq-grid {
+        gap: 65px;
+    }
+
+    .booking-grid {
+        grid-template-columns: minmax(0, 0.75fr) minmax(470px, 0.9fr);
+        gap: 60px;
+    }
+
+    .booking-form-wrapper {
+        padding: 40px;
+    }
+
+    .footer-grid {
+        gap: 40px;
+    }
 }
+
+
+/* =========================================================
+   TABLETS AND SMALL LAPTOPS
+========================================================= */
+
+@media (max-width: 992px) {
+    :root {
+        --section-spacing: 88px;
+    }
+
+    html {
+        scroll-padding-top: 85px;
+    }
+
+    .container {
+        width: min(calc(100% - 36px), 900px);
+    }
+
+    .desktop-nav,
+    .header-button {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .header-inner {
+        min-height: 74px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-block: 85px 100px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .hero-content {
+        max-width: 780px;
+    }
+
+    .hero-card {
+        width: min(100%, 620px);
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(5, 8, 11, 0.97),
+                rgba(5, 8, 11, 0.84)
+            ),
+            linear-gradient(
+                to top,
+                rgba(5, 8, 11, 0.8),
+                transparent 45%
+            );
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .trust-item:nth-child(-n + 2) {
+        border-bottom: 1px solid rgba(5, 8, 11, 0.16);
+    }
+
+    .services-heading {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .services-heading > p {
+        max-width: 650px;
+        padding-bottom: 0;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .service-card:last-child {
+        grid-column: 1 / -1;
+        min-height: 560px;
+    }
+
+    .convenience-grid {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    .convenience-visual {
+        width: min(100%, 720px);
+        min-height: 620px;
+        margin-inline: auto;
+    }
+
+    .convenience-content {
+        max-width: 760px;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .result-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .results-cta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .review-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .service-area-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .service-area-content {
+        max-width: 760px;
+    }
+
+    .service-area-visual {
+        width: min(100%, 720px);
+        min-height: 500px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .faq-heading {
+        position: static;
+        max-width: 720px;
+    }
+
+    .booking-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .booking-content {
+        max-width: 720px;
+        padding-top: 0;
+    }
+
+    .booking-form-wrapper {
+        width: min(100%, 760px);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 50px;
+    }
+}
+
+
+/* =========================================================
+   LARGE MOBILE DEVICES
+========================================================= */
 
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+    :root {
+        --section-spacing: 76px;
+    }
 
-  .hero h1 {
-    font-size: 32px;
-  }
+    .container {
+        width: min(calc(100% - 30px), 680px);
+    }
+
+    h1 {
+        font-size: clamp(3.6rem, 14vw, 5.6rem);
+    }
+
+    h2 {
+        font-size: clamp(2.75rem, 11vw, 4rem);
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .announcement-inner {
+        min-height: 44px;
+        gap: 12px;
+    }
+
+    .announcement-inner p,
+    .announcement-inner a {
+        font-size: 0.66rem;
+    }
+
+    .brand-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .brand-text strong {
+        font-size: 1.45rem;
+    }
+
+    .hero {
+        padding-block: 70px 80px;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .hero-benefits {
+        gap: 16px;
+    }
+
+    .hero-card {
+        padding: 34px 26px;
+        border-radius: 24px;
+    }
+
+    .hero-card h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero-card-price strong {
+        font-size: 2.7rem;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-item {
+        min-height: 80px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(5, 8, 11, 0.16);
+    }
+
+    .trust-item:last-child {
+        border-bottom: 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .service-card:last-child {
+        grid-column: auto;
+        min-height: auto;
+    }
+
+    .service-summary {
+        min-height: auto;
+    }
+
+    .convenience-visual {
+        min-height: 540px;
+    }
+
+    .convenience-image {
+        inset: 0 35px 0 0;
+    }
+
+    .convenience-stat {
+        top: 35px;
+        width: 130px;
+        min-height: 130px;
+        border-width: 6px;
+    }
+
+    .convenience-stat strong {
+        font-size: 2.3rem;
+    }
+
+    .convenience-accent {
+        bottom: 28px;
+        width: 220px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-card:last-child {
+        grid-column: auto;
+    }
+
+    .result-image {
+        height: 270px;
+    }
+
+    .results-cta {
+        padding: 32px 28px;
+    }
+
+    .results-cta .button {
+        width: 100%;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-card,
+    .process-card:last-child {
+        grid-column: auto;
+        min-height: 290px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card,
+    .review-card:last-child {
+        grid-column: auto;
+        min-height: 300px;
+    }
+
+    .service-area-visual {
+        min-height: 460px;
+    }
+
+    .map-card {
+        inset: 0 25px 45px 0;
+    }
+
+    .service-area-note {
+        width: 240px;
+    }
+
+    .faq-question {
+        grid-template-columns: minmax(0, 1fr) 40px;
+        gap: 16px;
+    }
+
+    .faq-question > span:first-child {
+        font-size: 1.35rem;
+    }
+
+    .faq-answer-inner {
+        padding-right: 25px;
+    }
+
+    .booking-form-wrapper {
+        padding: 34px 28px;
+        border-radius: 24px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .final-cta {
+        padding-block: 90px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-block: 70px 50px;
+    }
+
+    .footer-brand-column > p {
+        max-width: 480px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 24px;
+    }
 }
 
-@media (max-width: 480px) {
-  .hero {
-    padding: 100px 16px;
-  }
+
+/* =========================================================
+   STANDARD MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 576px) {
+    :root {
+        --section-spacing: 66px;
+    }
+
+    .container {
+        width: min(calc(100% - 24px), 520px);
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: clamp(3.1rem, 15vw, 4.6rem);
+    }
+
+    h2 {
+        font-size: clamp(2.45rem, 12vw, 3.4rem);
+    }
+
+    .section-label,
+    .eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 0.14em;
+    }
+
+    .section-label::before,
+    .eyebrow::before {
+        width: 26px;
+    }
+
+    .announcement-inner {
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .announcement-inner p {
+        max-width: 210px;
+        line-height: 1.35;
+    }
+
+    .header-inner {
+        min-height: 68px;
+    }
+
+    .brand {
+        gap: 9px;
+    }
+
+    .brand-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px 12px 12px 4px;
+        font-size: 1.2rem;
+    }
+
+    .brand-text strong {
+        font-size: 1.3rem;
+    }
+
+    .brand-text small {
+        font-size: 0.47rem;
+    }
+
+    .mobile-menu-button {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero {
+        padding-block: 58px 68px;
+    }
+
+    .hero h1 span {
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .hero-description {
+        line-height: 1.7;
+    }
+
+    .hero-benefits {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .hero-card h2 {
+        font-size: 2.55rem;
+    }
+
+    .hero-card-price {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-card-price strong {
+        font-size: 2.5rem;
+    }
+
+    .service-card {
+        padding: 30px 22px;
+    }
+
+    .service-card-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .service-card h3 {
+        font-size: 2.1rem;
+    }
+
+    .service-price strong {
+        font-size: 2.6rem;
+    }
+
+    .convenience-visual {
+        min-height: 450px;
+    }
+
+    .convenience-image {
+        inset: 0 15px 0 0;
+        border-radius: 22px;
+    }
+
+    .convenience-stat {
+        top: 22px;
+        right: -2px;
+        width: 108px;
+        min-height: 108px;
+        border-width: 5px;
+    }
+
+    .convenience-stat strong {
+        font-size: 2rem;
+    }
+
+    .convenience-stat span {
+        font-size: 0.52rem;
+    }
+
+    .convenience-accent {
+        right: 0;
+        bottom: 18px;
+        width: 205px;
+        padding: 18px;
+    }
+
+    .convenience-accent strong {
+        font-size: 1.4rem;
+    }
+
+    .convenience-item {
+        grid-template-columns: 46px minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .convenience-number {
+        width: 40px;
+        height: 40px;
+        font-size: 0.88rem;
+    }
+
+    .result-image {
+        height: 235px;
+    }
+
+    .result-card-content {
+        padding: 27px 22px 30px;
+    }
+
+    .results-cta {
+        padding: 28px 22px;
+    }
+
+    .results-cta h3 {
+        font-size: 1.7rem;
+    }
+
+    .process-card {
+        min-height: 270px;
+        padding: 30px 24px;
+    }
+
+    .process-number {
+        font-size: 5.8rem;
+    }
+
+    .process-card-content {
+        padding-top: 65px;
+    }
+
+    .review-card {
+        min-height: 280px;
+        padding: 30px 24px;
+    }
+
+    .review-card blockquote {
+        font-size: 1.7rem;
+    }
+
+    .area-list {
+        gap: 8px;
+    }
+
+    .area-list span {
+        padding: 8px 12px;
+        font-size: 0.66rem;
+    }
+
+    .service-area-visual {
+        min-height: 390px;
+    }
+
+    .map-card {
+        inset: 0 8px 55px 0;
+        border-radius: 22px;
+    }
+
+    .map-pin {
+        width: 48px;
+        height: 48px;
+    }
+
+    .map-location {
+        right: 18px;
+        bottom: 25px;
+        left: 18px;
+        padding: 17px;
+    }
+
+    .map-location strong {
+        font-size: 1.3rem;
+    }
+
+    .service-area-note {
+        right: 0;
+        width: min(92%, 250px);
+        padding: 18px;
+    }
+
+    .faq-question {
+        padding-block: 23px;
+    }
+
+    .faq-question > span:first-child {
+        font-size: 1.2rem;
+    }
+
+    .faq-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .booking-form-wrapper {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .form-heading h3 {
+        font-size: 2rem;
+    }
+
+    .booking-detail {
+        grid-template-columns: 43px minmax(0, 1fr);
+        gap: 13px;
+    }
+
+    .booking-detail > span {
+        width: 40px;
+        height: 40px;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 18px minmax(0, 1fr);
+    }
+
+    .final-cta {
+        padding-block: 75px;
+    }
+
+    .final-cta .button {
+        width: 100%;
+    }
+
+    .back-to-top {
+        right: 16px;
+        bottom: 16px;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 400px) {
+    .container {
+        width: min(calc(100% - 20px), 380px);
+    }
+
+    h1 {
+        font-size: 2.85rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .announcement-inner p {
+        max-width: 155px;
+        font-size: 0.59rem;
+    }
+
+    .announcement-inner a {
+        font-size: 0.58rem;
+    }
+
+    .brand-text small {
+        display: none;
+    }
+
+    .hero-card-label {
+        font-size: 0.56rem;
+    }
+
+    .service-card,
+    .process-card,
+    .review-card {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .convenience-visual {
+        min-height: 390px;
+    }
+
+    .convenience-stat {
+        width: 95px;
+        min-height: 95px;
+    }
+
+    .convenience-accent {
+        width: 190px;
+    }
+
+    .result-image {
+        height: 210px;
+    }
+
+    .service-area-visual {
+        min-height: 360px;
+    }
+
+    .service-area-note {
+        grid-template-columns: 35px minmax(0, 1fr);
+        padding: 15px;
+    }
+
+    .service-area-note > span {
+        width: 32px;
+        height: 32px;
+    }
+
+    .booking-form-wrapper {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .footer-bottom p {
+        line-height: 1.55;
+    }
+}
+
+
+/* =========================================================
+   MOBILE LANDSCAPE
+========================================================= */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .mobile-nav-inner {
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+    .button:hover,
+    .service-card:hover,
+    .result-card:hover,
+    .process-card:hover,
+    .review-card:hover {
+        transform: none;
+    }
+
+    .result-card:hover .result-image img {
+        transform: none;
+    }
+
+    .desktop-nav a:hover::after {
+        width: 0;
+    }
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+    .announcement-bar,
+    .site-header,
+    .mobile-nav,
+    .hero-actions,
+    .scroll-indicator,
+    .booking,
+    .final-cta,
+    .site-footer,
+    .back-to-top {
+        display: none;
+    }
+
+    body {
+        color: #000000;
+        background: #ffffff;
+    }
+
+    .section {
+        padding-block: 30px;
+    }
+
+    .js-enabled .reveal,
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .service-card,
+    .result-card,
+    .process-card,
+    .review-card {
+        break-inside: avoid;
+        box-shadow: none;
+    }
 }

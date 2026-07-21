@@ -1,131 +1,1508 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
 
-  <title>Drip Mobile Detailing | Camilla, GA</title>
-  <meta name="description" content="Premium mobile detailing in Camilla, GA. Interior & exterior detailing delivered to your location. Book your detail today.">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/responsive.css">
+    <meta
+        name="description"
+        content="Drip Mobile Detailing provides convenient interior and exterior vehicle detailing in Camilla, Georgia and surrounding areas."
+    >
+
+    <meta
+        name="keywords"
+        content="mobile detailing, car detailing, interior detailing, exterior detailing, Camilla Georgia"
+    >
+
+    <meta name="author" content="Drip Mobile Detailing">
+
+    <meta property="og:title" content="Drip Mobile Detailing">
+    <meta
+        property="og:description"
+        content="Professional mobile detailing delivered to your home or workplace."
+    >
+    <meta property="og:type" content="website">
+
+    <title>Drip Mobile Detailing | Camilla, GA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
 </head>
 
 <body>
 
-<!-- NAV -->
-<header class="navbar">
-  <div class="logo">Drip Mobile Detailing</div>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#results">Results</a>
-    <a href="#contact">Book</a>
-  </nav>
-</header>
+    <a class="skip-link" href="#mainContent">
+        Skip to main content
+    </a>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Premium Mobile Detailing That Comes to You</h1>
-    <p>Interior & exterior detailing delivered to your driveway. Fast, reliable, and built to make your car look brand new.</p>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container announcement-inner">
+            <p>
+                Mobile detailing available in Camilla and surrounding areas.
+            </p>
 
-    <div class="hero-buttons">
-      <a href="#contact" class="btn-primary">Book Now</a>
-      <a href="tel:+1234567890" class="btn-secondary">Call Now</a>
+            <a href="#booking">
+                Request an appointment
+                <span aria-hidden="true">→</span>
+            </a>
+        </div>
     </div>
-  </div>
-</section>
 
-<!-- SERVICES -->
-<section id="services" class="section">
-  <div class="container">
-    <h2>Services</h2>
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
 
-    <div class="grid">
-      <div class="card">
-        <h3>Basic Detail</h3>
-        <p>Quick clean for maintenance.</p>
-        <span class="price">Starting at $75</span>
-      </div>
+            <a
+                href="#home"
+                class="brand"
+                aria-label="Drip Mobile Detailing home"
+            >
+                <span class="brand-icon" aria-hidden="true">
+                    D
+                </span>
 
-      <div class="card featured">
-        <h3>Full Detail</h3>
-        <p>Deep interior + exterior restoration.</p>
-        <span class="price">Starting at $150</span>
-      </div>
+                <span class="brand-text">
+                    <strong>DRIP</strong>
+                    <small>Mobile Detailing</small>
+                </span>
+            </a>
 
-      <div class="card">
-        <h3>Premium Detail</h3>
-        <p>Full detail + protection package.</p>
-        <span class="price">Starting at $250</span>
-      </div>
-    </div>
-  </div>
-</section>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="#services">Services</a>
+                <a href="#results">Results</a>
+                <a href="#process">How It Works</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQs</a>
+            </nav>
 
-<!-- RESULTS -->
-<section id="results" class="section">
-  <div class="container">
-    <h2>Results</h2>
+            <a href="#booking" class="button button-small header-button">
+                Book Your Detail
+            </a>
 
-    <div class="grid">
-      <div class="img">Before / After</div>
-      <div class="img">Before / After</div>
-      <div class="img">Before / After</div>
-    </div>
-  </div>
-</section>
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobileNavigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-<!-- TESTIMONIALS -->
-<section class="section">
-  <div class="container">
-    <h2>What Clients Say</h2>
+        </div>
 
-    <div class="grid">
-      <div class="card">
-        <p>"Car looked brand new. Highly recommend."</p>
-      </div>
+        <nav
+            class="mobile-nav"
+            id="mobileNavigation"
+            aria-label="Mobile navigation"
+        >
+            <div class="container mobile-nav-inner">
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#results" class="mobile-nav-link">Results</a>
+                <a href="#process" class="mobile-nav-link">How It Works</a>
+                <a href="#reviews" class="mobile-nav-link">Reviews</a>
+                <a href="#faq" class="mobile-nav-link">FAQs</a>
 
-      <div class="card">
-        <p>"Super professional and convenient."</p>
-      </div>
+                <a
+                    href="#booking"
+                    class="button button-primary mobile-nav-link"
+                >
+                    Book Your Detail
+                </a>
+            </div>
+        </nav>
+    </header>
 
-      <div class="card">
-        <p>"Best detailing service I've used."</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <main id="mainContent">
 
-<!-- SERVICE AREA -->
-<section class="section">
-  <div class="container">
-    <h2>Service Area</h2>
-    <p>Proudly serving Camilla, GA and surrounding areas. We come to your home or workplace.</p>
-  </div>
-</section>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <img
+                    src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1800&q=90"
+                    alt=""
+                    aria-hidden="true"
+                    fetchpriority="high"
+                >
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Book Your Detail</h2>
+                <div class="hero-overlay"></div>
+            </div>
 
-    <form action="https://formsubmit.co/you@yourdomain.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
+            <div class="hero-shape hero-shape-one"></div>
+            <div class="hero-shape hero-shape-two"></div>
 
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="tel" name="phone" placeholder="Phone Number" required>
-      <input type="text" name="vehicle" placeholder="Vehicle Type">
-      <textarea name="message" placeholder="Service & preferred date"></textarea>
+            <div class="container hero-grid">
 
-      <button class="btn-primary">Book Now</button>
-    </form>
-  </div>
-</section>
+                <div class="hero-content reveal">
+                    <span class="eyebrow">
+                        Camilla, Georgia Mobile Detailing
+                    </span>
 
-<!-- CALL BUTTON -->
-<a href="tel:+1234567890" class="call-btn">Call Now</a>
+                    <h1>
+                        Professional detailing.
+                        <span>Delivered to you.</span>
+                    </h1>
 
-<script src="JS/script.js"></script>
+                    <p class="hero-description">
+                        Skip the waiting room. We bring professional interior
+                        and exterior vehicle detailing directly to your home,
+                        driveway, or workplace.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#booking" class="button button-primary">
+                            Book Your Detail
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="#services" class="button button-outline">
+                            View Packages
+                        </a>
+                    </div>
+
+                    <div class="hero-benefits">
+                        <div class="hero-benefit">
+                            <span aria-hidden="true">✓</span>
+                            <p>We come to you</p>
+                        </div>
+
+                        <div class="hero-benefit">
+                            <span aria-hidden="true">✓</span>
+                            <p>Professional products</p>
+                        </div>
+
+                        <div class="hero-benefit">
+                            <span aria-hidden="true">✓</span>
+                            <p>Convenient scheduling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card reveal reveal-delay-one">
+                    <span class="hero-card-label">Popular Package</span>
+
+                    <p class="hero-card-category">
+                        Interior + Exterior
+                    </p>
+
+                    <h2>Full Detail</h2>
+
+                    <p class="hero-card-description">
+                        A complete deep clean designed to refresh your vehicle
+                        inside and out.
+                    </p>
+
+                    <div class="hero-card-price">
+                        <span>Starting at</span>
+                        <strong>$150</strong>
+                    </div>
+
+                    <ul class="hero-card-list">
+                        <li>Exterior hand wash</li>
+                        <li>Wheel and tire cleaning</li>
+                        <li>Interior vacuum and wipe-down</li>
+                        <li>Windows and finishing touches</li>
+                    </ul>
+
+                    <a href="#booking" class="hero-card-link">
+                        Request This Package
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <a href="#services" class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <span aria-hidden="true">↓</span>
+            </a>
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="trust-bar" aria-label="Service highlights">
+            <div class="container trust-grid">
+
+                <div class="trust-item">
+                    <strong>Mobile</strong>
+                    <span>We come to you</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>Interior</strong>
+                    <span>Deep cleaning</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>Exterior</strong>
+                    <span>Hand washed</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>Convenient</strong>
+                    <span>Home or workplace</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services section" id="services">
+            <div class="container">
+
+                <div class="section-heading services-heading reveal">
+                    <div>
+                        <span class="section-label">
+                            Detailing Packages
+                        </span>
+
+                        <h2>
+                            Choose the right level of clean.
+                        </h2>
+                    </div>
+
+                    <p>
+                        Whether your vehicle needs routine maintenance or a
+                        complete refresh, there is a package built for it.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Basic Detail -->
+                    <article class="service-card reveal">
+                        <div class="service-card-header">
+                            <span class="service-number">01</span>
+
+                            <span class="service-badge">
+                                Maintenance
+                            </span>
+                        </div>
+
+                        <div class="service-icon" aria-hidden="true">
+                            ✦
+                        </div>
+
+                        <h3>Basic Detail</h3>
+
+                        <p class="service-summary">
+                            A convenient maintenance clean for vehicles that
+                            need a quick, professional refresh.
+                        </p>
+
+                        <div class="service-price">
+                            <span>Starting at</span>
+                            <strong>$75</strong>
+                        </div>
+
+                        <ul class="service-list">
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Exterior hand wash
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Wheel and tire cleaning
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Light interior vacuum
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Interior wipe-down
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Clean exterior windows
+                            </li>
+                        </ul>
+
+                        <a href="#booking" class="service-link">
+                            Select Basic Detail
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <!-- Full Detail -->
+                    <article class="service-card featured-service reveal reveal-delay-one">
+                        <span class="popular-label">
+                            Most Popular
+                        </span>
+
+                        <div class="service-card-header">
+                            <span class="service-number">02</span>
+
+                            <span class="service-badge">
+                                Deep Clean
+                            </span>
+                        </div>
+
+                        <div class="service-icon" aria-hidden="true">
+                            ◆
+                        </div>
+
+                        <h3>Full Detail</h3>
+
+                        <p class="service-summary">
+                            A thorough interior and exterior service for
+                            vehicles needing a deeper level of attention.
+                        </p>
+
+                        <div class="service-price">
+                            <span>Starting at</span>
+                            <strong>$150</strong>
+                        </div>
+
+                        <ul class="service-list">
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Complete exterior wash
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Wheel, tire and trim cleaning
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Thorough interior vacuum
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Dashboard and panel cleaning
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Interior and exterior windows
+                            </li>
+                        </ul>
+
+                        <a href="#booking" class="service-link">
+                            Select Full Detail
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <!-- Premium Detail -->
+                    <article class="service-card reveal reveal-delay-two">
+                        <div class="service-card-header">
+                            <span class="service-number">03</span>
+
+                            <span class="service-badge">
+                                Protection
+                            </span>
+                        </div>
+
+                        <div class="service-icon" aria-hidden="true">
+                            ◈
+                        </div>
+
+                        <h3>Premium Detail</h3>
+
+                        <p class="service-summary">
+                            The complete detailing experience with added care
+                            and protection for a longer-lasting finish.
+                        </p>
+
+                        <div class="service-price">
+                            <span>Starting at</span>
+                            <strong>$250</strong>
+                        </div>
+
+                        <ul class="service-list">
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Everything in the Full Detail
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Added paint protection
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Detailed interior treatment
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Trim and tire conditioning
+                            </li>
+
+                            <li>
+                                <span aria-hidden="true">✓</span>
+                                Premium finishing service
+                            </li>
+                        </ul>
+
+                        <a href="#booking" class="service-link">
+                            Select Premium Detail
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                </div>
+
+                <p class="pricing-note reveal">
+                    Final pricing may vary based on vehicle size, condition,
+                    selected add-ons, and the amount of work required.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Convenience Section -->
+        <section class="convenience section">
+            <div class="container convenience-grid">
+
+                <div class="convenience-visual reveal">
+                    <div class="convenience-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1300&q=85"
+                            alt="Vehicle being professionally detailed"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="convenience-stat">
+                        <strong>100%</strong>
+                        <span>Mobile service</span>
+                    </div>
+
+                    <div class="convenience-accent">
+                        <span>Clean</span>
+                        <strong>Without the wait.</strong>
+                    </div>
+                </div>
+
+                <div class="convenience-content reveal reveal-delay-one">
+                    <span class="section-label">
+                        Why Mobile Detailing?
+                    </span>
+
+                    <h2>
+                        Your vehicle gets detailed while you handle your day.
+                    </h2>
+
+                    <p class="convenience-intro">
+                        There is no need to sit in a waiting room or arrange
+                        another ride. We bring the equipment and detailing
+                        service directly to your location.
+                    </p>
+
+                    <div class="convenience-list">
+
+                        <article class="convenience-item">
+                            <span class="convenience-number">01</span>
+
+                            <div>
+                                <h3>Save Time</h3>
+                                <p>
+                                    Continue working or relaxing while your
+                                    vehicle is professionally cleaned.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="convenience-item">
+                            <span class="convenience-number">02</span>
+
+                            <div>
+                                <h3>Choose Your Location</h3>
+                                <p>
+                                    Schedule service at your home, workplace,
+                                    or another approved location.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="convenience-item">
+                            <span class="convenience-number">03</span>
+
+                            <div>
+                                <h3>Enjoy the Results</h3>
+                                <p>
+                                    Step back into a cleaner, refreshed vehicle
+                                    without disrupting your schedule.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <a href="#booking" class="button button-dark">
+                        Schedule Mobile Service
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="results section" id="results">
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+                    <span class="section-label">
+                        Detailing Results
+                    </span>
+
+                    <h2>
+                        The difference is in the details.
+                    </h2>
+
+                    <p>
+                        From worn interiors to dull exteriors, every service is
+                        approached with care and attention.
+                    </p>
+                </div>
+
+                <div class="results-grid">
+
+                    <article class="result-card reveal">
+                        <div class="result-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1597007066704-67bf2068d5b2?auto=format&fit=crop&w=1000&q=85"
+                                alt="Clean luxury vehicle exterior"
+                                loading="lazy"
+                            >
+
+                            <span class="result-label">
+                                Exterior Finish
+                            </span>
+                        </div>
+
+                        <div class="result-card-content">
+                            <span>01</span>
+                            <h3>Clean, Glossy Exterior</h3>
+                            <p>
+                                Dirt and road film are carefully removed to
+                                restore a cleaner, brighter finish.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="result-card reveal reveal-delay-one">
+                        <div class="result-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85"
+                                alt="Detailed sports car"
+                                loading="lazy"
+                            >
+
+                            <span class="result-label">
+                                Detailed Finish
+                            </span>
+                        </div>
+
+                        <div class="result-card-content">
+                            <span>02</span>
+                            <h3>Attention to Every Surface</h3>
+                            <p>
+                                Wheels, tires, trim, glass, and painted
+                                surfaces receive focused care.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="result-card reveal reveal-delay-two">
+                        <div class="result-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=85"
+                                alt="Clean modern vehicle interior"
+                                loading="lazy"
+                            >
+
+                            <span class="result-label">
+                                Interior Refresh
+                            </span>
+                        </div>
+
+                        <div class="result-card-content">
+                            <span>03</span>
+                            <h3>A Cleaner Interior</h3>
+                            <p>
+                                Dust, debris, and buildup are removed to create
+                                a more comfortable driving space.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="results-cta reveal">
+                    <div>
+                        <span>Ready for your own transformation?</span>
+
+                        <h3>
+                            Let us bring the detail shop to you.
+                        </h3>
+                    </div>
+
+                    <a href="#booking" class="button button-primary">
+                        Request an Appointment
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="process section" id="process">
+            <div class="container">
+
+                <div class="section-heading process-heading reveal">
+                    <span class="section-label">
+                        How It Works
+                    </span>
+
+                    <h2>
+                        A cleaner vehicle in three simple steps.
+                    </h2>
+                </div>
+
+                <div class="process-grid">
+
+                    <article class="process-card reveal">
+                        <div class="process-number">
+                            01
+                        </div>
+
+                        <div class="process-card-content">
+                            <span>Choose</span>
+                            <h3>Select Your Package</h3>
+
+                            <p>
+                                Choose the service that best matches your
+                                vehicle’s current condition and your goals.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="process-card reveal reveal-delay-one">
+                        <div class="process-number">
+                            02
+                        </div>
+
+                        <div class="process-card-content">
+                            <span>Schedule</span>
+                            <h3>Pick a Date and Location</h3>
+
+                            <p>
+                                Tell us when and where you would like your
+                                detailing appointment completed.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="process-card reveal reveal-delay-two">
+                        <div class="process-number">
+                            03
+                        </div>
+
+                        <div class="process-card-content">
+                            <span>Relax</span>
+                            <h3>We Handle the Detail</h3>
+
+                            <p>
+                                We arrive at the approved location and complete
+                                the selected service while you continue your day.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="reviews section" id="reviews">
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+                    <span class="section-label">
+                        Client Feedback
+                    </span>
+
+                    <h2>
+                        Clean cars. Happy drivers.
+                    </h2>
+                </div>
+
+                <div class="reviews-grid">
+
+                    <article class="review-card reveal">
+                        <div
+                            class="review-stars"
+                            aria-label="Five out of five stars"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Car looked brand new. Highly recommend.”
+                        </blockquote>
+
+                        <div class="review-author">
+                            <span class="review-avatar" aria-hidden="true">
+                                C
+                            </span>
+
+                            <div>
+                                <strong>Detailing Client</strong>
+                                <span>Camilla area</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card featured-review reveal reveal-delay-one">
+                        <div
+                            class="review-stars"
+                            aria-label="Five out of five stars"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Super professional and convenient.”
+                        </blockquote>
+
+                        <div class="review-author">
+                            <span class="review-avatar" aria-hidden="true">
+                                D
+                            </span>
+
+                            <div>
+                                <strong>Detailing Client</strong>
+                                <span>Mobile service</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card reveal reveal-delay-two">
+                        <div
+                            class="review-stars"
+                            aria-label="Five out of five stars"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Best detailing service I’ve used.”
+                        </blockquote>
+
+                        <div class="review-author">
+                            <span class="review-avatar" aria-hidden="true">
+                                V
+                            </span>
+
+                            <div>
+                                <strong>Detailing Client</strong>
+                                <span>Verified service</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Service Area -->
+        <section class="service-area section">
+            <div class="container service-area-grid">
+
+                <div class="service-area-content reveal">
+                    <span class="section-label">
+                        Service Area
+                    </span>
+
+                    <h2>
+                        Mobile detailing in Camilla and surrounding areas.
+                    </h2>
+
+                    <p>
+                        Drip Mobile Detailing provides convenient service at
+                        homes and workplaces throughout the local area.
+                    </p>
+
+                    <div class="area-list">
+                        <span>Camilla</span>
+                        <span>Homes</span>
+                        <span>Workplaces</span>
+                        <span>Surrounding Areas</span>
+                    </div>
+
+                    <a href="#booking" class="button button-dark">
+                        Check Your Location
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="service-area-visual reveal reveal-delay-one">
+                    <div class="map-card">
+                        <div class="map-pattern"></div>
+
+                        <span class="map-pin" aria-hidden="true">
+                            ●
+                        </span>
+
+                        <div class="map-location">
+                            <span>Primary Service Area</span>
+                            <strong>Camilla, Georgia</strong>
+                        </div>
+                    </div>
+
+                    <div class="service-area-note">
+                        <span aria-hidden="true">↗</span>
+
+                        <p>
+                            Contact us to confirm availability outside the
+                            primary service area.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq section" id="faq">
+            <div class="container faq-grid">
+
+                <div class="faq-heading reveal">
+                    <span class="section-label">
+                        Common Questions
+                    </span>
+
+                    <h2>
+                        Before your appointment.
+                    </h2>
+
+                    <p>
+                        Here are answers to a few common questions about mobile
+                        detailing services and scheduling.
+                    </p>
+
+                    <a href="#booking" class="text-link">
+                        Still have a question?
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="faq-list">
+
+                    <article class="faq-item reveal">
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                Do I need to provide water or electricity?
+                            </span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                +
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    Service requirements may depend on the
+                                    selected package and appointment location.
+                                    Any requirements will be confirmed before
+                                    your scheduled appointment.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item reveal">
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                How long does a detailing appointment take?
+                            </span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                +
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    Appointment time depends on the package,
+                                    vehicle size, condition, and any additional
+                                    services requested.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item reveal">
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                Does the starting price apply to every vehicle?
+                            </span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                +
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    Starting prices are estimates. Final pricing
+                                    can vary based on vehicle size, condition,
+                                    selected package, and requested add-ons.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item reveal">
+                        <button
+                            class="faq-question"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                What happens if the weather is bad?
+                            </span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                +
+                            </span>
+                        </button>
+
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    Weather may affect certain appointments.
+                                    When necessary, we will contact you to
+                                    discuss available options or rescheduling.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Booking -->
+        <section class="booking section" id="booking">
+            <div class="booking-background-text" aria-hidden="true">
+                DRIP
+            </div>
+
+            <div class="container booking-grid">
+
+                <div class="booking-content reveal">
+                    <span class="section-label section-label-light">
+                        Book Your Detail
+                    </span>
+
+                    <h2>
+                        Ready to refresh your vehicle?
+                    </h2>
+
+                    <p>
+                        Complete the appointment request and provide a few
+                        details about your vehicle. We will follow up to confirm
+                        availability, location, service, and final pricing.
+                    </p>
+
+                    <div class="booking-details">
+
+                        <article class="booking-detail">
+                            <span aria-hidden="true">01</span>
+
+                            <div>
+                                <strong>Submit Your Request</strong>
+                                <p>
+                                    Tell us about your vehicle and preferred
+                                    detailing package.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="booking-detail">
+                            <span aria-hidden="true">02</span>
+
+                            <div>
+                                <strong>Confirm the Details</strong>
+                                <p>
+                                    We will confirm your appointment, service
+                                    location, and estimated price.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="booking-detail">
+                            <span aria-hidden="true">03</span>
+
+                            <div>
+                                <strong>Enjoy a Cleaner Vehicle</strong>
+                                <p>
+                                    We arrive at the approved location and
+                                    complete your scheduled service.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="booking-form-wrapper reveal reveal-delay-one">
+                    <div class="form-heading">
+                        <span>Appointment Request</span>
+                        <h3>Tell us about your vehicle.</h3>
+
+                        <p>
+                            Fields marked with an asterisk are required.
+                        </p>
+                    </div>
+
+                    <form
+                        class="booking-form"
+                        id="bookingForm"
+                        method="get"
+                        novalidate
+                    >
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="fullName">
+                                    Full Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phoneNumber">
+                                    Phone Number *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phoneNumber"
+                                    name="phoneNumber"
+                                    placeholder="(229) 000-0000"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                                <small class="field-error"></small>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailAddress">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="emailAddress"
+                                name="emailAddress"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+
+                            <small class="field-error"></small>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="vehicleType">
+                                    Vehicle Type *
+                                </label>
+
+                                <select
+                                    id="vehicleType"
+                                    name="vehicleType"
+                                    required
+                                >
+                                    <option value="" selected disabled>
+                                        Select vehicle type
+                                    </option>
+
+                                    <option value="car">
+                                        Car
+                                    </option>
+
+                                    <option value="suv">
+                                        SUV
+                                    </option>
+
+                                    <option value="truck">
+                                        Truck
+                                    </option>
+
+                                    <option value="van">
+                                        Van
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+                                </select>
+
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="detailPackage">
+                                    Detailing Package *
+                                </label>
+
+                                <select
+                                    id="detailPackage"
+                                    name="detailPackage"
+                                    required
+                                >
+                                    <option value="" selected disabled>
+                                        Select a package
+                                    </option>
+
+                                    <option value="basic">
+                                        Basic Detail — From $75
+                                    </option>
+
+                                    <option value="full">
+                                        Full Detail — From $150
+                                    </option>
+
+                                    <option value="premium">
+                                        Premium Detail — From $250
+                                    </option>
+
+                                    <option value="unsure">
+                                        Not sure yet
+                                    </option>
+                                </select>
+
+                                <small class="field-error"></small>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="preferredDate">
+                                    Preferred Date *
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="preferredDate"
+                                    name="preferredDate"
+                                    required
+                                >
+
+                                <small class="field-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferredTime">
+                                    Preferred Time *
+                                </label>
+
+                                <select
+                                    id="preferredTime"
+                                    name="preferredTime"
+                                    required
+                                >
+                                    <option value="" selected disabled>
+                                        Select a time
+                                    </option>
+
+                                    <option value="morning">
+                                        Morning
+                                    </option>
+
+                                    <option value="midday">
+                                        Midday
+                                    </option>
+
+                                    <option value="afternoon">
+                                        Afternoon
+                                    </option>
+                                </select>
+
+                                <small class="field-error"></small>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceLocation">
+                                Service Address or Area *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="serviceLocation"
+                                name="serviceLocation"
+                                placeholder="Enter the service location"
+                                autocomplete="street-address"
+                                required
+                            >
+
+                            <small class="field-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicleCondition">
+                                Vehicle Condition or Special Requests
+                            </label>
+
+                            <textarea
+                                id="vehicleCondition"
+                                name="vehicleCondition"
+                                rows="5"
+                                placeholder="Tell us about stains, pet hair, excessive dirt, odors, or other concerns."
+                            ></textarea>
+
+                            <small class="field-error"></small>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input
+                                type="checkbox"
+                                id="appointmentAgreement"
+                                name="appointmentAgreement"
+                                required
+                            >
+
+                            <label for="appointmentAgreement">
+                                I understand that this form is an appointment
+                                request and that service is not confirmed until
+                                I receive a response.
+                            </label>
+
+                            <small class="field-error"></small>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="button button-primary form-submit-button"
+                        >
+                            <span class="button-text">
+                                Request Appointment
+                            </span>
+
+                            <span
+                                class="button-loader"
+                                aria-hidden="true"
+                            ></span>
+
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <p class="form-privacy">
+                            Your information will only be used to respond to
+                            your detailing request.
+                        </p>
+
+                        <div
+                            class="form-status"
+                            id="formStatus"
+                            role="status"
+                            aria-live="polite"
+                        ></div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="container final-cta-inner reveal">
+                <span class="section-label">
+                    Clean Without the Wait
+                </span>
+
+                <h2>
+                    Your driveway is the new detail shop.
+                </h2>
+
+                <p>
+                    Book mobile detailing at your home or workplace and get
+                    back to enjoying your vehicle.
+                </p>
+
+                <a href="#booking" class="button button-primary">
+                    Book Your Detail
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand-column">
+                <a
+                    href="#home"
+                    class="brand footer-brand"
+                    aria-label="Drip Mobile Detailing home"
+                >
+                    <span class="brand-icon" aria-hidden="true">
+                        D
+                    </span>
+
+                    <span class="brand-text">
+                        <strong>DRIP</strong>
+                        <small>Mobile Detailing</small>
+                    </span>
+                </a>
+
+                <p>
+                    Professional interior and exterior mobile detailing
+                    delivered to homes and workplaces in Camilla and
+                    surrounding areas.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Drip Mobile Detailing on Facebook">
+                        Facebook
+                    </a>
+
+                    <a href="#" aria-label="Drip Mobile Detailing on Instagram">
+                        Instagram
+                    </a>
+
+                    <a href="#" aria-label="Drip Mobile Detailing on TikTok">
+                        TikTok
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links-column">
+                <h3>Explore</h3>
+
+                <a href="#services">Services</a>
+                <a href="#results">Results</a>
+                <a href="#process">How It Works</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+
+            <div class="footer-links-column">
+                <h3>Services</h3>
+
+                <a href="#services">Basic Detail</a>
+                <a href="#services">Full Detail</a>
+                <a href="#services">Premium Detail</a>
+                <a href="#booking">Request an Appointment</a>
+            </div>
+
+            <div class="footer-contact-column">
+                <h3>Service Area</h3>
+
+                <p>
+                    Camilla, Georgia and surrounding areas.
+                </p>
+
+                <p>
+                    Mobile service available at approved homes and workplaces.
+                </p>
+
+                <a href="#booking" class="footer-cta-link">
+                    Check Availability
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                © <span id="currentYear">2026</span>
+                Drip Mobile Detailing. All rights reserved.
+            </p>
+
+            <p>
+                Website concept by
+                <a
+                    href="https://www.drakescode.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Drakes Code &amp; Design
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Return to the top of the page"
+    >
+        ↑
+    </button>
+
+    <script src="./JS/script.js" defer></script>
+
 </body>
 </html>
